@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo's</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scriptMain.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body onload="refreshDataLokal()" class="container">
+	    <header> 
+			<h1>ToDo-Manager</h1>
+			<p> 
+				<a href="create.html" >erstellen</a>
+				<a href="modify.html" >verändern</a>
+				<a href="main.html" >Übersicht</a>
+				<a href="impressum.html" >impressum</a>
+		</header> 
+		
+		<article>
+			<table  class="container">
+				<thead>
+				    <tr>
+					   <th class="col-xs-7 col-sm-7 col-md-7">Aufgabe</th>
+				 	   <th class="col-xs-2 col-sm-2 col-md-2">Deadline</th>
+					   <th class="col-xs-1 col-sm-2 col-md-2">Status</th>
+					   <th class="col-xs-1 col-sm-1 col-md-1">Aktion</th>
+				    </tr>
+				</thead>
+				<tbody id="todotbody">
+				</tbody>
+			
+			</table>
+		</article> 
+	
+  </body>
+</html>
